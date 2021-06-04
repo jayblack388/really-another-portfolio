@@ -17,7 +17,7 @@ export default function Blog({ data }) {
 					<small>
 						{author}, {post.frontmatter.date}
 					</small>
-					<p>{post.excerpt}</p>
+					<p>{post.frontmatter.snippet}</p>
 				</article>
 			))}
 		</div>
@@ -33,9 +33,9 @@ export const pageQuery = graphql`
 				}
 				frontmatter {
 					date(fromNow: true)
+					snippet
 					title
 				}
-				excerpt
 				id
 			}
 		}
