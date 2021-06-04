@@ -44,6 +44,9 @@ module.exports = {
 				cache_busting_mode: 'none',
 				display: `standalone`,
 				icon: `src/images/icon.png`,
+				icon_options: {
+					purpose: `any maskable`,
+				},
 				name: `John Blackwell Portfolio`,
 				short_name: `JB Portfolio`,
 				start_url: `/`,
