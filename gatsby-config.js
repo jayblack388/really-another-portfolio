@@ -3,10 +3,7 @@ require('dotenv').config({
 });
 module.exports = {
 	/* Your site config here */
-	siteMetadata: {
-		title: 'Myasd New Blog',
-		description: 'This is my awesome blog I made from scratch!',
-	},
+	siteMetadata: require('./site-meta-data.json'),
 	plugins: [
 		{
 			resolve: `gatsby-source-filesystem`,

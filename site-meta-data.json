@@ -1,0 +1,10 @@
+{
+	"author": "John Blackwell",
+	"description": "Gatsby built portfolio for John Blackwell",
+	"siteUrl": "https://lucid-curie-787bd0.netlify.app/",
+	"title": "John Blackwell's Portfolio",
+	"home": {
+		"title": "John Blackwell",
+		"description": "The homepage"
+	}
+}

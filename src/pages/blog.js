@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
+import { author } from '../../site-meta-data.json';
 
 export default function Blog({ data }) {
 	const { posts } = data.blog;
@@ -14,7 +15,7 @@ export default function Blog({ data }) {
 						<h2>{post.frontmatter.title}</h2>
 					</Link>
 					<small>
-						{post.frontmatter.author}, {post.frontmatter.date}
+						{author}, {post.frontmatter.date}
 					</small>
 					<p>{post.excerpt}</p>
 				</article>
@@ -33,7 +34,6 @@ export const pageQuery = graphql`
 				frontmatter {
 					date(fromNow: true)
 					title
-					author
 				}
 				excerpt
 				id
