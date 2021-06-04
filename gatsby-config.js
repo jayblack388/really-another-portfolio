@@ -37,6 +37,20 @@ module.exports = {
 				url: 'https://api.github.com/graphql',
 			},
 		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				background_color: `#f7f0eb`,
+				cache_busting_mode: 'none',
+				display: `standalone`,
+				icon: `src/images/icon.png`,
+				name: `John Blackwell Portfolio`,
+				short_name: `JB Portfolio`,
+				start_url: `/`,
+				theme_color: `#a2466c`,
+				theme_color_in_head: false, // This will avoid adding theme-color meta tag.
+			},
+		},
 		`gatsby-transformer-remark`,
 		`gatsby-plugin-netlify-cms`,
 	],
