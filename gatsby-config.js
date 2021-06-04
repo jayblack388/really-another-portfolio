@@ -51,7 +51,8 @@ module.exports = {
 				theme_color_in_head: false, // This will avoid adding theme-color meta tag.
 			},
 		},
-		`gatsby-transformer-remark`,
 		`gatsby-plugin-netlify-cms`,
+		'gatsby-plugin-offline',
+		`gatsby-transformer-remark`,
 	],
 };
