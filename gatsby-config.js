@@ -12,9 +12,16 @@ module.exports = {
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `blog`,
-				path: `${__dirname}/src/blog/`,
+				path: `${__dirname}/blog/`,
 			},
 		},
+		// {
+		// 	resolve: `gatsby-source-filesystem`,
+		// 	options: {
+		// 		name: `blog`,
+		// 		path: `${__dirname}/src/blog/`,
+		// 	},
+		// },
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -25,12 +32,12 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-graphql',
 			options: {
-				typeName: 'GitHub',
 				fieldName: 'github',
-				url: 'https://api.github.com/graphql',
 				headers: {
 					Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
 				},
+				typeName: 'GitHub',
+				url: 'https://api.github.com/graphql',
 			},
 		},
 		`gatsby-transformer-remark`,
