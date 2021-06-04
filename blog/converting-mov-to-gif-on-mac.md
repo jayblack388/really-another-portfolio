@@ -1,6 +1,7 @@
 ---
 date: 2021-02-23T00:00:46.133Z
 title: Converting .mov to .gif on Mac
+snippet: A guide for writing a shell function to convert a .mov to a .gif
 tags:
   - cli
 ---
