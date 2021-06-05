@@ -1,8 +1,9 @@
 {
 	"author": "John Blackwell",
 	"description": "Gatsby built portfolio for John Blackwell",
+	"keywords": ["developer", "portfolio", "react", "gatsby"],
 	"siteUrl": "https://lucid-curie-787bd0.netlify.app/",
-	"title": "John Blackwell's Portfolio",
+	"title": "John Blackwell",
 	"home": {
 		"title": "John Blackwell",
 		"description": "The homepage"

@@ -12,13 +12,6 @@ module.exports = {
 				path: `${__dirname}/blog/`,
 			},
 		},
-		// {
-		// 	resolve: `gatsby-source-filesystem`,
-		// 	options: {
-		// 		name: `blog`,
-		// 		path: `${__dirname}/src/blog/`,
-		// 	},
-		// },
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -55,7 +48,8 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-netlify-cms`,
-		'gatsby-plugin-offline',
+		`gatsby-plugin-offline`,
+		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-plugin-sitemap`,
 			options: {
