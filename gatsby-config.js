@@ -56,6 +56,17 @@ module.exports = {
 		},
 		`gatsby-plugin-netlify-cms`,
 		'gatsby-plugin-offline',
+		{
+			resolve: `gatsby-plugin-sitemap`,
+			options: {
+				serialize: ({ path, modifiedGmt }) => {
+					return {
+						url: path,
+						lastmod: modifiedGmt,
+					};
+				},
+			},
+		},
 		`gatsby-transformer-remark`,
 	],
 };
