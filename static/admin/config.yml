@@ -19,11 +19,13 @@ collections:
                 name: thumbnail,
                 label: Thumbnail,
                 widget: image,
-                media_library:
+                media_library: {
                     name: cloudinary,
-                    config:
+                    config: {
                         cloud_name: dvjmyp3nz,
                         api_key: 194329334998586
+                    }
+                }
             }
           - {
                 name: tags,
